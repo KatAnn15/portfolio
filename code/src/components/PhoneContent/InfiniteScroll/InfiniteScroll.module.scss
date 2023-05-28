@@ -1,0 +1,7 @@
+@import '../../../variables.scss';
+
+.content {
+    padding: 10px;
+    height: calc(100% - $g-bottom-bar-height - 25px);
+    overflow-x: hidden;
+}

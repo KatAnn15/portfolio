@@ -1,0 +1,26 @@
+.main {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    pointer-events: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: 1px dashed green;
+    text-shadow: 0 0 2px green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appear 1s;
+    p {
+        text-align: center;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0
+    } 
+    to {
+        opacity: 1;
+    }
+}

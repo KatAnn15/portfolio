@@ -1,0 +1,67 @@
+[
+  {
+    "label": "Home",
+    "value": "home",
+    "keys": ["home", "landing"]
+  },
+  {
+    "label": "About Me",
+    "value": "about",
+    "keys": [
+      "about",
+      "personality",
+      "person",
+      "infomarion",
+      "remote",
+      "freelance",
+      "biography",
+      "services",
+      "development",
+      "design"
+    ]
+  },
+  {
+    "label": "Experience",
+    "value": "experience",
+    "keys": ["experience", "work", "jobs", "profession", "team", "projects"]
+  },
+  {
+    "label": "Contacts",
+    "value": "contact",
+    "keys": [
+      "address",
+      "phone",
+      "email",
+      "form",
+      "contact",
+      "viber",
+      "telegram",
+      "social"
+    ]
+  },
+  {
+    "label": "Skills",
+    "value": "skills",
+    "keys": [
+      "skills",
+      "react",
+      "html",
+      "scss",
+      "css",
+      "sass",
+      "ts",
+      "typescript",
+      "js",
+      "javascript",
+      "windows",
+      "macos",
+      "linux",
+      "firebase",
+      "docker",
+      "rest",
+      "api",
+      "git",
+      "wix"
+    ]
+  }
+]

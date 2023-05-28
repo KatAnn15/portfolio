@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Web Development",
+        "tags": ["Frontend"],
+        "image": "web.png",
+        "background": "#dbb3d9",
+        "back": "e3821ee3-8e07-4c90-b7b4-4b0cd5435fd0/rU1YebpVYM"
+    },
+    {
+        "title": "Languages",
+        "tags": ["React", "TypeScrip", "JS", "SASS"],
+        "image": "skills.png",
+        "background": "#bbca3c",
+        "back": "fe74378a-d8b6-4478-b6f4-306e7b606a72/jevPZDeK1E"
+    }
+]

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Castoro';
+    src: local('Castoro'), url(./Castoro_Titling/CastoroTitling-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(./Roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Great Vibes';
+    src: local('Great Vibes'), url(./Great_Vibes/GreatVibes-Regular.ttf) format('truetype');
+}

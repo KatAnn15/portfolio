@@ -1,0 +1,84 @@
+
+.skill-item {
+  width: 100%;
+  min-height: 360px;
+  position: relative;
+  border-radius: 15px;
+  font-family: "Roboto";
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.side {
+    padding: 10px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.front {
+  animation: .5s rotateFront ease-in var(--delay);
+  animation-fill-mode: forwards;
+}
+
+.back {
+  animation: .5s rotateBack ease-in calc(var(--delay) + 0.5s);
+  transform: rotateY(180deg);
+  animation-fill-mode: forwards;
+}
+
+.frame {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  object-fit: contain;
+  left: 0;
+  bottom: 25px;
+}
+
+.title {
+  font-size: 34px;
+}
+
+.tags {
+  display: flex;
+  margin-top: 10px;
+  gap: 3px;
+}
+
+.tag {
+  display: block;
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+@keyframes rotateFront {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes rotateBack {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}

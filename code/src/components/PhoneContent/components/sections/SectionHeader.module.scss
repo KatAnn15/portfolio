@@ -1,0 +1,34 @@
+.section-header-wrapper {
+  width: 100%;
+  align-items: left;
+  
+  padding: 5px;
+  position: relative;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 500;
+  font-family: "Castoro";
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 200;
+  margin: 10px 0;
+}
+
+.line {
+  height: 1px;
+  margin: 5px 0;
+  animation: 2s lineWidth 1 ease-in;
+}
+
+@keyframes lineWidth {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 100%;
+  }
+}

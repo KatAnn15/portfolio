@@ -1,0 +1,25 @@
+.wrapper {
+    background-color: rgb(6, 31, 6);
+    padding: 30px 50px 0 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-family: 'Castoro';
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .wrapper {
+        align-items: flex-start;
+        padding: 15px;
+        overflow-y: scroll;
+        h2 {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+}

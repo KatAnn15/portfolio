@@ -1,0 +1,121 @@
+.timeline {
+    width: 800px;
+    padding: 20px 50px 0 50px;
+    margin: 0 auto;
+    height: 100%;
+}
+.timeline-item {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    
+    
+    &_tag {
+        width: 250px;
+        height: 100px;
+        display: flex;
+        background-color: var(--item-bg);
+        transform: translateY(40%);
+        box-shadow: inset -3px 0 55px black;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 10px solid var(--item-bg);
+            transform: translateX(-50%);
+        }
+        p {
+            font-size: 36px;
+            font-weight: 800;
+            text-shadow: 1px 1px 3px rgb(80, 77, 77);
+            padding-top: 10px;
+        }
+        span {
+            position: absolute;
+            bottom: 20px;
+            text-shadow: 1px 1px black;
+            left: 100px;
+        }
+    }
+    &_core {
+        width: 40px;
+        height: 100%;
+        position: relative;
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        
+        &::before {
+            content: '';
+            background-color: var(--item-bg);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 0 5px rgba(0, 0, 0, 0.548);
+        }
+    }
+    &_info {
+        width: 350px;
+        transform: translateY(10%);
+        padding-left: 20px;
+        p {
+            background-color: var(--item-bg);
+            width: fit-content;
+            text-align: center;
+            padding: 10px 25px;
+            border-radius: 15px;
+            text-shadow: 1px 1px 3px rgb(85, 84, 84);
+            margin-bottom: 10px;
+        }
+        span {
+            font-size: 14px;
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .timeline {
+        width: 100%;
+        padding: 5px;
+    }
+    .timeline-item {
+        height: 180px;
+        &_tag {
+            width: 100px;
+            height: 50px;
+            img {
+                width: 50px;
+                height: 50px;
+                border-width: 2px;
+                transform: translateX(-35%);
+            }
+            p {
+                font-size: 14px;
+            }
+            span{
+                font-size: 12px;
+                left: 30px;
+                bottom: 5px;
+                width: fit-content;
+            }
+        }
+        &_core {
+            width: 10px;
+            border: 1px solid white;
+            margin: 0 6px;
+        }
+        &_info {
+            width: 180px;
+            padding-left: 0;
+            p {
+                font-size: 13px;
+                padding: 5px 10px;
+            }
+            span {
+                font-size: 11px;
+            }
+        }
+    }
+}

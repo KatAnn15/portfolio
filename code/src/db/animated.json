@@ -1,0 +1,35 @@
+{
+  "animated": [
+    {
+      "type": "text",
+      "style": {
+        "fontSize": "24px",
+        "margin": "15px 0",
+        "color": "yellow",
+        "fontWeight": "800"
+      },
+      "animation": {
+        "name": "InfiniteHorizontalScroll",
+        "delay": 100,
+        "duration": 5,
+        "direction": "Left"
+      },
+      "content": "Hi! This is Kateryna"
+    },
+    {
+      "type": "text",
+      "style": {},
+      "animation": {
+        "name": "InfiniteHorizontalScroll",
+        "delay": 600,
+        "duration": 5,
+        "direction": "Right"
+      },
+      "content": "You are looking at my portfolio"
+    },
+    { "type": "section", "name": "reactiveDesign" },
+    { "type": "section", "name": "webDevelopment" },
+    { "type": "section", "name": "smartDevelopment" },
+    { "type": "section", "name": "skills" }
+  ]
+}

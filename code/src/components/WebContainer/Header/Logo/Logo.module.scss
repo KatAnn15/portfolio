@@ -1,0 +1,32 @@
+.logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Great Vibes';
+    color: white;
+    h3 {
+        font-size: 42px;
+        padding: 5px 7px;
+    }
+    span {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+}
+
+.heart {
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        h3 {
+            display: none;
+        }
+    }
+}

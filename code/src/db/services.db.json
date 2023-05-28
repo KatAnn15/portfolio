@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Web Development",
+    "icon": "web",
+    "description": "Commercial development for your website"
+  },
+  {
+    "label": "Responsive Development",
+    "icon": "responsive",
+    "description": "Make sure your website looks professional on all screen sizes"
+  },
+  {
+    "label": "UI/UX Design",
+    "icon": "design",
+    "description": "Create design that matches your project goals and theme"
+  }
+]

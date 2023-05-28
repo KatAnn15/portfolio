@@ -1,0 +1,22 @@
+@import '../../../variables.scss';
+
+$bottom-bar-scroll-width: 150px;
+
+
+.bottom-bar-container {
+    width: 100%;
+    height: $g-bottom-bar-height;
+    background-color: gray;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: calc((100% - $bottom-bar-scroll-width) / 2);
+        top: 13px;
+        background-color: black;
+        width: 150px;
+        height: 8px;
+        border-radius: 10px;
+    }
+}
