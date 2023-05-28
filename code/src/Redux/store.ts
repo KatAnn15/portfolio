@@ -3,6 +3,7 @@ import modeReducer from "./Slices/modeSlice";
 import scaleReducer from "./Slices/scaleSlice";
 import tabReducer from "./Slices/tabSlice";
 import cursorReducer from "./Slices/cursorSlice";
+import themeReducer from "./Slices/themeSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     siteScale: scaleReducer,
     activeTab: tabReducer,
     cursor: cursorReducer,
+    theme: themeReducer,
   },
 });
 

@@ -10,13 +10,37 @@ import Experience from "./Experience/Experience";
 import Contact from "./Contact/Contact";
 import Skills from "./Skills/Skills";
 import Cursor from "../Cursor/Cursor";
-import { useEffect, useState } from "react";
+import { CSSProperties, useCallback, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+
+const themeStyles = {
+  light: {
+    "--web-color": "white",
+    "--web-bg-color": "rgba(0, 0, 0, 0.788)",
+    "--web-nav-color": "#013220",
+    "--web-nav-bg-color": "white",
+    "--web-secondary-color": "rgb(221, 221, 221)",
+  },
+  dark: {
+    "--web-color": "#013220",
+    "--web-bg-color": "white",
+    "--web-nav-color": "white",
+    "--web-nav-bg-color": "rgba(0, 0, 0, 0.788)",
+    "--web-secondary-color": "#5A5A5A",
+  },
+};
 
 const Content = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
+
   const { value } = useSelector((state: RootState) => state.activeTab);
+  const { value: theme } = useSelector((state: RootState) => state.theme);
+
   const setSearchParams = useSearchParams()[1];
+
+  const getSiteColors = useCallback(() => {
+    return themeStyles[theme] as CSSProperties;
+  }, [theme]);
 
   useEffect(() => {
     if (value === "home") {
@@ -40,7 +64,11 @@ const Content = () => {
     (state: RootState) => state.activeTab
   );
   return (
-    <div className={styles.wrapper} onMouseMove={updateCursorPos}>
+    <div
+      className={styles.wrapper}
+      onMouseMove={updateCursorPos}
+      style={getSiteColors()}
+    >
       <Cursor x={pos.x} y={pos.y} />
       <Header />
       <div className={styles["desktop-content"]}>

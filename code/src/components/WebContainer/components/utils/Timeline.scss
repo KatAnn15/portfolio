@@ -17,6 +17,7 @@
         background-color: var(--item-bg);
         transform: translateY(40%);
         box-shadow: inset -3px 0 55px black;
+        color: var(--web-nav-color);
         img {
             width: 100px;
             height: 100px;
@@ -59,6 +60,7 @@
         width: 350px;
         transform: translateY(10%);
         padding-left: 20px;
+        color: var(--web-nav-color);
         p {
             background-color: var(--item-bg);
             width: fit-content;
@@ -71,6 +73,7 @@
         span {
             font-size: 14px;
             text-align: justify;
+            color: var(--web-color);
         }
     }
 }

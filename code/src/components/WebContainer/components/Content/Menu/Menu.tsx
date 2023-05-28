@@ -58,6 +58,7 @@ const Menu = () => {
           />
         ))}
       </div>
+      <div className={styles.date}>2023</div>
     </div>
   );
 };

@@ -46,6 +46,7 @@ const Skills = () => {
       className={cx({ "skills-wrapper": true, [styles["content-item"]]: true })}
     >
       <h2>Education And Skills</h2>
+      <hr />
       <div className='skills-container'>
         {skills.map((skill, i) => (
           <SkillCard {...skill} key={String(i)} />

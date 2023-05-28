@@ -1,7 +1,6 @@
 .nav-menu {
   width: 100%;
-  height: fit-content;
-  padding: 20px 0;
+  height: 100%;
   grid-column: 1;
   grid-row: 2 / 4;
   display: flex;
@@ -9,8 +8,9 @@
   min-height: 500px;
   font-weight: 600;
   font-family: 'Roboto';
-  color: gray;
+  color: var(--web-nav-color);
   cursor: pointer;
+  background-color: var(--web-nav-bg-color);
 }
 
 .menu-list {
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px 0;
+    padding: 50px 0;
 }
 
 .menu-item {
@@ -52,6 +52,15 @@
     top: 0;
     border-radius: 5px 0 0 5px;
   }
+}
+
+.date {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: gray;
 }
 
 @media screen and (max-width: 400px) {

@@ -3,7 +3,8 @@ import styles from "./Experience.module.scss";
 import baseStyles from "../Content.module.scss";
 import { cx } from "../../../../../utils/classConstructor";
 import { setCursorText } from "../../../../../Redux/Slices/cursorSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../../../../Redux/store";
 
 const experienceTimelineData = [
   {
@@ -41,6 +42,7 @@ const experienceTimelineData = [
 ];
 
 const Experience = () => {
+  const { value: theme } = useSelector((state: RootState) => state.theme);
   const dispatch = useDispatch();
 
   const updateCursorText = (text: string | null) => {
@@ -70,7 +72,11 @@ const Experience = () => {
       >
         Coding Experience Timeline
       </h2>
-      <Timeline data={experienceTimelineData} />
+      <hr />
+      <Timeline
+        data={experienceTimelineData}
+        theme={theme === "light" ? "standard" : "dark"}
+      />
     </div>
   );
 };

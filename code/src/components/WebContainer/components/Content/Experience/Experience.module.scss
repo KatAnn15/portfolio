@@ -1,15 +1,21 @@
 .wrapper {
-    background-color: rgb(6, 31, 6);
+    background-color: var(--web-bg-color);
     padding: 30px 50px 0 50px;
-    color: white;
+    color: var(--web-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     h2 {
-        font-family: 'Castoro';
-        font-size: 26px;
-        margin-bottom: 30px;
+        color: green;
+        font-family: "Castoro";
+        font-size: 32px;
+        text-shadow: 0px 0px 3px green;
+    }
+    hr {
+        color: transparent;
+        border-bottom: dashed 1px green;
+        width: 100%;
     }
 }
 @media screen and (max-width: 400px) {
